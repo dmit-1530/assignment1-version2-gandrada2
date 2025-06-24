@@ -180,5 +180,16 @@ section:nth-of-type(4) {
     background-color: var(--blue-grey-100);
     padding: 64px 32px;
     color: #000000;
+    text-align: left;
 }
 
+section:nth-of-type(4) h2 {
+    margin: 0.2rem 1.3rem 2rem;
+}
+
+section:nth-of-type(4) h2,
+section:nth-of-type(4) p:first-of-type,
+section:nth-of-type(4) .asterisk:first-child {
+    text-align: center;
+    justify-content: center;
+}
