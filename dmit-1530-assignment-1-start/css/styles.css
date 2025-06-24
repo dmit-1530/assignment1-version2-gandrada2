@@ -43,8 +43,16 @@ h2 {
     font-weight: normal;
 }
 
-span {
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
 
+.asterisk {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 header, footer {
@@ -130,7 +138,25 @@ section:first-child img {
     border-radius: 8px;
 }
 
-section:nth-child(2) {
+section:nth-of-type(2) {
     padding: 64px 32px;
-    
+
 }
+
+section:nth-of-type(2) .asterisk {
+    margin-bottom: 0;
+}
+
+section:nth-of-type(2) h3 {
+    margin-top: 0;
+}
+
+section:nth-of-type(2) h2 {
+    margin: .5rem 2rem 2rem;
+
+}
+
+section:nth-of-type(2) p:first-of-type {
+    margin-bottom: 4rem;
+}
+
