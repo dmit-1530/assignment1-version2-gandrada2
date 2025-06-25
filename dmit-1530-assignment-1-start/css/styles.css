@@ -729,12 +729,6 @@ header nav a {
         text-align: center;
     }
 
-    .gallery .gallery-container section:nth-of-type(3) .cultural-exchange-text {
-        width: calc((100% - 1rem) / 2);
-        gap: 2rem;
-        display: inline;
-    }
-
 
 
 }
@@ -742,6 +736,13 @@ header nav a {
 
 /**Media Query for Gallery Page large Screens*/
 @media screen and (min-width:960px) {
+
+    .gallery .gallery-container section:first-of-type {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 0 0 64px;
+    }
 
     .gallery .gallery-container section:nth-of-type(3) {
         display: flex;
