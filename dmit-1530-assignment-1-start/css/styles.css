@@ -704,8 +704,10 @@ header nav a {
     }
 
     .gallery .gallery-container section:nth-of-type(3) h2 {
+        width: 100%;
         justify-content: center;
-        margin: 0 auto;
+        align-items: center;
+        text-align: center;
     }
 
     .gallery .gallery-container section:nth-of-type(3) .cultural-exchange-text {
