@@ -694,14 +694,14 @@ header nav a {
 
     .gallery .gallery-container .art-gallery-container .art-gallery-content {
         display: flex;
-        flex-wrap: nowrap;
         flex-direction: row;
-        display: inline;
         gap: 1rem;
+        padding: 0 32px;
+        align-items: flex-start;
     }
 
     .art-gallery-element {
-        width: calc((100% - 2rem) / 2);
+        flex: 1;
     }
 
     .gallery .gallery-container section:first-of-type .art-gallery-content img {
@@ -709,12 +709,11 @@ header nav a {
     }
 
     .gallery .gallery-container section:first-of-type .art-gallery-content:nth-of-type(2) {
-        width: calc((100% - 3rem) / 2);
-        gap: 1rem;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: row-reverse;
-        display: inline-block;
+        gap: 1rem;
+        padding: 0 32px;
+        align-items: flex-start;
     }
 
     .gallery .gallery-container section:nth-of-type(3) {
