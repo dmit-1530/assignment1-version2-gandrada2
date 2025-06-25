@@ -539,7 +539,10 @@ header nav a {
 .gallery-container {
     min-width: 640px;
     margin: 0 auto;
-    padding: 0 32px;
+}
+
+.gallery-container .gallery-inner-container {
+    padding: 32px 32px;
 }
 
 .gallery-container section:first-of-type {
@@ -547,7 +550,7 @@ header nav a {
 }
 
 .gallery-container section:first-of-type h2 {
-    margin: 64px 32px 48px;
+    margin: 32px 32px 48px;
 }
 
 .gallery-container section:first-of-type img {
