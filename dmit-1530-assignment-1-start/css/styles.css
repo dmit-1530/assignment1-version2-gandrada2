@@ -61,12 +61,6 @@ h3 {
     font-weight: bold;
 }
 
-header, footer {
-    background-color: var(--blue-grey-50);
-    color: #fff;
-    padding: 2rem 4rem;   
-}
-
 header {
     display: flex;
     flex-wrap: wrap;
@@ -112,7 +106,7 @@ header nav a {
     max-width: 1040px;
 }
 
-section:first-child {
+.inner-container section:first-of-type {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--blue-grey-50);
@@ -120,18 +114,18 @@ section:first-child {
     padding: 64px 32px;
 }
 
-section:first-child h2 {
+.inner-container section:first-of-type h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.25rem;
     font-weight: normal;
 }
 
-section:first-child p {
+.inner-container section:first-of-type p {
     margin-top: 0;
     margin-bottom: 42px;
 }
 
-section:first-child button {
+.inner-container section:first-of-type button {
     background-color: #111111;
     color: var(--blue-grey-100);
     border-radius: 6px;
@@ -141,7 +135,7 @@ section:first-child button {
     text-align: center;
 }
 
-section:first-child img {
+.inner-container section:first-of-type img {
     border-radius: 8px;
 }
 
@@ -214,7 +208,8 @@ section:nth-of-type(4) ul li {
 }
 
 section:nth-of-type(4) img {
-    margin-top: 2.5rem;
+    display: block;
+    margin: 2.5rem auto;
 }
 
 section:nth-of-type(5) {
@@ -265,25 +260,51 @@ footer p {
     color: var(--blue-grey-200);
     font-size: 0.75em;
     font-weight: normal;
+    padding: 0 34px;
 }
 
 footer p:first-of-type {
     text-align: left;
     font-size: 0.75rem;
-    padding: 0 34px;
     margin: 0;
 }
 
-footer .site-footer {
+footer nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-footer .footer-section ul {
+footer .footer-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    color: #FFFFFF;
+    flex-direction: column;
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75em;
+    font-weight: normal;
+}
+
+footer .footer-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .footer-links ul li a:hover {
+    color: #e0e0e0;
+}
+
+footer .footer-navigation {
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem auto;
+}
+
+footer .footer-navigation .footer-links {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    list-style-type: none;
-    text-decoration: none;
+    justify-content: center;
+    text-align: left;
 }
