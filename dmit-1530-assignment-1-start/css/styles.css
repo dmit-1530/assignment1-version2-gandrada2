@@ -358,16 +358,45 @@ footer .footer-navigation .footer-links {
     section:nth-of-type(4) .architecture-card {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
+        gap: 1rem;
     }
     
-    .text {
-        width: 50%;
+    section:nth-of-type(4) .architecture-card .architecture-elements img {
+        width: 640px;
+        height: 240px;
+        object-fit: cover;
+        display: block;
+        border-radius: 8px;
+     }
+
+    section:nth-of-type(4) .architecture-elements {
+        width: calc((100% - 1rem) / 2);
+        padding: 0;
     }
 
-    section:nth-of-type(4) .architecture-card img {
-        width: 50%;
+    section:nth-of-type(4) .architecture-card:nth-of-type(2) {
+        flex-direction: row-reverse;
     }
+
+    section:nth-of-type(5) {
+        padding: 64px 153px;
+    }
+
+    footer .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer .footer-container .footer-elements {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+
 
 }
