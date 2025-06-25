@@ -638,11 +638,19 @@ header nav a {
     text-align: left;
 }
 
-.gallery footer nav {
+.gallery footer .footer-container nav .footer-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 32px auto 40px;
 }
 
 .gallery footer p {
     justify-content: center;
     text-align: center;
 }
+
