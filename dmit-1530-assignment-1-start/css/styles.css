@@ -141,7 +141,7 @@ header nav a {
 }
 
 section:nth-of-type(2) {
-    padding: 64px 32px;
+    padding: 4rem 2rem;
 
 }
 
@@ -335,14 +335,39 @@ footer .footer-navigation .footer-links {
         gap: 3rem;
     }
 
+    section:nth-of-type(2) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 0 1rem;
+        justify-items: center;
+    }
+    
     .services:first-of-type {
         width: 100%;
+        height: 320px;
     }
 
-    .services:not(:first-of-type) {
-        width: calc((100% - 1rem) / 2);
+    section:nth-of-type(2) .services:not(:first-of-type) {
+        width: calc((100% - 4rem) / 2);
+        margin: 0;
+        padding: 0;
+        height: 230px;
     }
 
-
+    section:nth-of-type(4) .architecture-card {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+    }
     
+    .text {
+        width: 50%;
+    }
+
+    section:nth-of-type(4) .architecture-card img {
+        width: 50%;
+    }
+
 }
