@@ -617,3 +617,32 @@ header nav a {
 .gallery-container section:nth-of-type(4) ul li {
     margin: 1.5rem 0 0;
 }
+
+.gallery footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+.gallery footer .footer-container .footer-elements .brand p {
+    align-content: flex-start;
+    text-align: left;
+}
+
+.gallery footer .footer-container .footer-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.gallery footer nav {
+    justify-content: center;
+}
+
+.gallery footer p {
+    justify-content: center;
+    text-align: center;
+}
