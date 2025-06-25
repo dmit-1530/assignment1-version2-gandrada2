@@ -654,3 +654,42 @@ header nav a {
     text-align: center;
 }
 
+
+/**Media Query for Gallery Page Medium-Sized screens*/
+@media screen and (min-width:640px) {
+
+    .gallery header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .gallery .brand {
+        justify-content: flex-start;
+    }
+
+    .gallery header nav {
+        justify-content: flex-end;
+    }
+
+    .gallery header ul {
+        margin-top: 0;
+        gap: 3rem;
+    }
+
+    .gallery section:nth-of-type(3) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .gallery section:nth-of-type(3) .cultural-exchange-text {
+        width: calc((100% - 3rem) / 2);
+        gap: 2rem;
+    }
+
+
+
+}
