@@ -103,8 +103,8 @@ header nav a {
 }
 
 .inner-container {
-    max-width: 1040px;
     min-width: 640px;
+    margin: 0 auto;
 }
 
 .inner-container section:first-of-type {
@@ -355,6 +355,10 @@ footer .footer-navigation .footer-links {
         height: 230px;
     }
 
+    section:nth-of-type(2) .services:first-of-type p {
+        margin-bottom: 0;
+    }
+
     section:nth-of-type(4) .architecture-card {
         display: flex;
         flex-wrap: wrap;
@@ -380,7 +384,7 @@ footer .footer-navigation .footer-links {
     }
 
     section:nth-of-type(5) {
-        padding: 64px 153px;
+        padding: 4rem 9.5rem;
     }
 
     footer .footer-container {
@@ -398,5 +402,28 @@ footer .footer-navigation .footer-links {
     }
 
 
+}
+
+/*media query for large screens*/
+@media screen and (min-width:960px) {
+
+    section:nth-of-type(2) .services:not(:first-of-type) {
+        width: calc((100% - 4rem) / 3);
+        margin: 0;
+        padding: 0;
+        height: 230px;
+    }
+
+    section:nth-of-type(2) .services {
+        height: auto;
+    }
+
+    section:nth-of-type(2) .services:first-of-type p {
+        margin-bottom: 0;
+    }
+
+    section:nth-of-type(5) {
+        padding: 4rem 10.5rem;
+    }
 
 }
