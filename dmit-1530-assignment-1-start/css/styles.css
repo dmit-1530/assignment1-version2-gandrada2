@@ -655,7 +655,7 @@ header nav a {
 }
 
 
-/**Media Query for Gallery Page Medium-Sized screens*/
+/**Media Query for Gallery Page medium-sized screens*/
 @media screen and (min-width:640px) {
 
     .gallery header {
@@ -679,17 +679,41 @@ header nav a {
         gap: 3rem;
     }
 
-    .gallery section:nth-of-type(3) {
+    .gallery .gallery-container section:nth-of-type(3) {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
 
-    .gallery section:nth-of-type(3) .cultural-exchange-text {
+    .gallery .gallery-container section:nth-of-type(3) .cultural-exchange-text {
         width: calc((100% - 3rem) / 2);
         gap: 2rem;
     }
 
 
+
+}
+
+/**Media Query for Gallery Page large Screens*/
+@media screen and (min-width:960px) {
+
+    .gallery .gallery-container section:nth-of-type(3) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .gallery .gallery-container section:nth-of-type(3) h2 {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .gallery .gallery-container section:nth-of-type(3) .cultural-exchange-text {
+        width: calc((100% - 4rem) / 2);
+        gap: 2rem;
+        display: inline;
+    }
+
+    
 
 }
