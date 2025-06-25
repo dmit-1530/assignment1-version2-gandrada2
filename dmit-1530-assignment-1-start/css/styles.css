@@ -573,3 +573,8 @@ header nav a {
     text-align: left;
 }
 
+.gallery-container section:nth-of-type(2) {
+    background-color: var(--blue-grey-200);
+}
+
+
